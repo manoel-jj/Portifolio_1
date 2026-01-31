@@ -85,7 +85,7 @@ function Achievements() {
   const badges = [
     {
       link: "https://academy.hackthebox.com/achievement/badge/d12bc0c1-9718-11f0-9254-bea50ffe6cb4",
-      image: "/badges/badge-01.png",
+      image: "/badges/1.webp",
       title: "Hack The Box Academy",
       desc: "Conquista obtida através de labs práticos focados em fundamentos de segurança e análise inicial de ataques."
     },
