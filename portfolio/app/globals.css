@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f0f10;   /* fundo escuro elegante */
+  --foreground: #e5e5e5;   /* texto principal */
 }
 
 @theme inline {
@@ -14,9 +14,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f0f10;
+    --foreground: #e5e5e5;
   }
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel 70s linear infinite;
 }
 
 body {
@@ -34,6 +47,7 @@ body {
 .badges-section h2 {
   font-size: 2rem;
   margin-bottom: 32px;
+  color: #ffffff;
 }
 
 .badges-grid {
@@ -43,17 +57,17 @@ body {
 }
 
 .badge-card {
-  background: #0f0f0f;
+  background: #1a1a1d; /* card cinza escuro */
   border-radius: 16px;
   padding: 20px;
   text-decoration: none;
-  color: inherit;
+  color: var(--foreground);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .badge-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 255, 150, 0.2);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.08);
 }
 
 .badge-card img {
@@ -65,9 +79,11 @@ body {
 .badge-card h3 {
   font-size: 1.1rem;
   margin-bottom: 8px;
+  color: #ffffff;
 }
 
 .badge-card p {
   font-size: 0.9rem;
-  opacity: 0.85;
+  opacity: 0.8;
+  color: #b5b5b5;
 }
