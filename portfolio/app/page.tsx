@@ -4,45 +4,52 @@ import LabsHTB from "./components/LabsHTB";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Certificates from "./components/Certificates";
+import Contato from "./components/Contato";
+
+const SECTION_CLASS = "py-8 px-6 max-w-7xl mx-auto";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
 
-      {/* HERO / INTRO */}
+      {/* HERO */}
       <Hero />
 
-      {/* BADGES – HACK THE BOX */}
-      <section id="badges" className="py-20 px-6 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4">
-          Hack The Box • Badges
+      {/* BADGES */}
+      <section id="badges" className="py-10 px-6 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-3">
+          Hack The Box Badges
         </h2>
-
-        <p className="text-muted-foreground mb-8 max-w-3xl">
-          Conquistas obtidas na Hack The Box Academy, demonstrando habilidades
-          práticas em cibersegurança, SOC, análise de logs, detecção de ataques
-          e fundamentos defensivos.
+        <p className="text-muted-foreground mb-5 max-w-3xl">
+          Conquistas obtidas na Hack The Box Academy, com foco em SOC,
+          análise de logs e segurança defensiva.
         </p>
-
         <BadgesCarousel />
       </section>
 
-      {/* LABS & INVESTIGAÇÕES (SHERLOCK) */}
-      <LabsHTB />
-
       {/* PROJETOS */}
-      <section id="projects" className="py-20 px-6 max-w-7xl mx-auto">
+      <section id="projects" className={SECTION_CLASS}>
         <Projects />
       </section>
 
-      {/* FORMAÇÃO ACADÊMICA */}
-      <section id="education" className="py-20 px-6 max-w-7xl mx-auto">
+      {/* FORMAÇÃO */}
+      <section id="education" className={SECTION_CLASS}>
         <Education />
       </section>
 
       {/* CERTIFICAÇÕES */}
-      <section id="certificates" className="py-20 px-6 max-w-7xl mx-auto">
+      <section id="certificates" className={SECTION_CLASS}>
         <Certificates />
+      </section>
+
+      {/* LABS HTB */}
+      <section id="labs" className={SECTION_CLASS}>
+        <LabsHTB />
+      </section>
+
+      {/* CONTATO */}
+      <section id="contato" className="py-10 px-6 max-w-7xl mx-auto">
+        <Contato />
       </section>
 
     </main>

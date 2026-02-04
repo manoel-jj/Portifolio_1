@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <section id="education" className="py-20">
+    <section id="education" className="py-0">
       <h2 className="text-3xl font-bold mb-12">Formação Acadêmica</h2>
 
       <div className="space-y-6">

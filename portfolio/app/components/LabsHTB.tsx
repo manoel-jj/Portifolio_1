@@ -44,7 +44,7 @@ técnicas de engenharia social e o método de entrega do payload malicioso.
   ];
 
   return (
-    <section id="labs" className="py-20 max-w-6xl mx-auto px-6">
+    <section id="labs" className="py-0 max-w-6xl mx-auto px-6">
       <h2 className="text-3xl font-bold mb-12">
         Labs & Investigações — Hack The Box (Sherlock)
       </h2>

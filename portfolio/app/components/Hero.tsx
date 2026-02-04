@@ -35,6 +35,13 @@ export default function Hero() {
           >
             Conquistas HTB
           </a>
+          {/*  BOTÃO CONTATO */}
+          <a
+            href="#contato"
+            className="px-6 py-3 rounded-lg bg-green-500 text-black font-medium hover:bg-green-600 transition"
+          >
+            Entrar em Contato
+          </a>
         </div>
       </div>
 
